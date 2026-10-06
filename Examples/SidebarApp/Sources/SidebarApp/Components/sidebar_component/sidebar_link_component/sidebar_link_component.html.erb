@@ -1,0 +1,9 @@
+<li class="sidebar__item">
+  <a class="<%= cssClass %>" href="<%= href %>" aria-current="<%= ariaCurrent %>">
+    <span class="sidebar__icon" aria-hidden="true"><%= icon %></span>
+    <span class="sidebar__label"><%= label %></span>
+    <% if hasBadge { %>
+    <span class="sidebar__badge"><%= badgeCount %></span>
+    <% } %>
+  </a>
+</li>

@@ -1,0 +1,23 @@
+# SwiftPM
+.build/
+.swiftpm/
+.netrc
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.*

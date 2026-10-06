@@ -1,0 +1,8 @@
+<ul class="sidebar__nav" data-title="<%= title %>">
+  <% for link in links { %>
+  <li><%= link %></li>
+  <% } %>
+</ul>
+<% if let footer { %>
+<div class="sidebar__nav-footer"><% render(footer) %></div>
+<% } %>

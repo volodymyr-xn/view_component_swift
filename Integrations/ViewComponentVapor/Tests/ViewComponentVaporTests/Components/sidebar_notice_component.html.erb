@@ -1,0 +1,10 @@
+<section class="sidebar__notices">
+  <h2><%= title %></h2>
+  <% if !items.isEmpty { %>
+  <ul>
+    <% for item in items { %>
+    <li><%= item %></li>
+    <% } %>
+  </ul>
+  <% } %>
+</section>

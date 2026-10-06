@@ -1,0 +1,29 @@
+<nav class="sidebar" aria-label="Primary" data-sidebar>
+  <% if !brand.isEmpty { %>
+  <div class="sidebar__brand"><%= brand %></div>
+  <% } %>
+
+  <% if !notices.isEmpty { %>
+  <ul class="sidebar__notices">
+    <% for notice in notices { %>
+    <li class="sidebar__notice"><%= notice %></li>
+    <% } %>
+  </ul>
+  <% } %>
+
+  <% if hasNavigation { %>
+  <div class="sidebar__sections">
+    <% render(sections) %>
+  </div>
+  <% } else { %>
+  <p class="sidebar__empty">No navigation available.</p>
+  <% } %>
+
+  <% if !content.isEmpty { %>
+  <div class="sidebar__extra"><%= content %></div>
+  <% } %>
+
+  <% if let footer { %>
+  <% render(footer) %>
+  <% } %>
+</nav>

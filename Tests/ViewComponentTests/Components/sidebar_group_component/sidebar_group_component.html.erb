@@ -1,0 +1,9 @@
+<section class="sidebar__group">
+  <% if !heading.isEmpty { %>
+  <h2 class="sidebar__group-heading"><%= heading %></h2>
+  <% } %>
+  <div class="sidebar__group-body"><%= content %></div>
+  <% if !links.isEmpty { %>
+  <ul class="sidebar__group-links"><% render(links) %></ul>
+  <% } %>
+</section>

@@ -1,0 +1,15 @@
+<section class="<%= cssClass %>" data-sidebar-section>
+  <h2 class="sidebar__section-title">
+    <button class="sidebar__section-toggle" type="button" data-sidebar-toggle>
+      <%= title %>
+    </button>
+    <% if totalBadgeCount > 0 { %>
+    <span class="sidebar__section-count"><%= totalBadgeCount %></span>
+    <% } %>
+  </h2>
+  <% if showsLinks { %>
+  <ul class="sidebar__links">
+    <% render(links) %>
+  </ul>
+  <% } %>
+</section>
